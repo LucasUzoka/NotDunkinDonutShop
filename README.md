@@ -2,44 +2,57 @@
 
 ## Project Description
 
-Here goes your awesome project description!
+A webapp serving as an interface for a mock donut delivery service. 
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* React
+* Spring Boot
+* Java
+* JavaScript
+* BootStrap / CSS
+* JUnit
 
 ## Features
 
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+### Customers can...
+* Log in/out
+* Register for a new account
+* Navigate to different pages using a toggleable sidebar
+* View donuts to purchase
+* Search for donuts (filtering)
+* Add/remove donuts to/from a cart
+  * Cart is in a sidebar, visible from any page when logged in
+  * Crt displays the current subtotal
+  * Cart persists on refresh/tab close
+* Add/remove donuts to/from a list of favorites
+  * Favorited items can be added to the cart 
+* Checkout with their current cart
+  * Subtotal and items are visible to the customer 
+* Change the address they assigned when registering
+* View their previous donut orders
+ * Filter these orders based on the date/time.
+ * Orders display a progress bar that fills over a few minutes, to emulate the baking/delivery process. 
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Clear cart when logging out (When logging into another account, the cart from the first carries over)
 
-## Getting Started
-   
-(include git clone command)
-(include all environment setup steps)
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+* Clone the repository
+* Open the Java Project (folder named SpringBootProject)
+* Configure the settings in the application.properties file to match how mysql is running on your end (username, password, port, etc)
+* Open the React App (all other files, the Java Project is inside it)
+* The calls to the backend default to localhost:8080, so change this where needed if you changed the port
+* Use npm install to get the necessary libraries.
+* Run the Java Project
+* The database is locally maintained, populate tables as needed
+* Use npm start to run the application.
 
 ## Contributors
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+* Lucas Uzoka
+* Myles Austin
 
-## License
 
-This project uses the following license: [<license_name>](<link>).
